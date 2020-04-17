@@ -24,4 +24,4 @@ CREATE TABLE Bands_Genres (
     ,CONSTRAINT PK_Bands_Genres PRIMARY KEY (band_name, formed_year, country_name, genre_name)
     ,CONSTRAINT FK1_Bands_Genres FOREIGN KEY (genre_name) REFERENCES Genres(genre_name)
     ,CONSTRAINT FK2_Bands_Genres FOREIGN KEY (band_name, formed_year, country_name) REFERENCES Bands(band_name, formed_year, country_name)
-)
+);
