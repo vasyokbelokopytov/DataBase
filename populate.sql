@@ -3,7 +3,7 @@ INSERT INTO Countries (country_name) VALUES ('Sweden');
 INSERT INTO Countries (country_name) VALUES ('USA');
 INSERT INTO Countries (country_name) VALUES ('Finland');
 INSERT INTO Countries (country_name) VALUES ('Germany');
-
+INSERT INTO Countries (country_name) VALUES ('Poland');
 
 INSERT INTO Genres (genre_name) VALUES ('New wave of british heavy');
 INSERT INTO Genres (genre_name) VALUES ('Heavy');
@@ -28,7 +28,7 @@ INSERT INTO Genres (genre_name) VALUES ('Gothenburg');
 INSERT INTO Genres (genre_name) VALUES ('Alternative');
 INSERT INTO Genres (genre_name) VALUES ('Groove thrash');
 INSERT INTO Genres (genre_name) VALUES ('Groove metal');
-
+INSERT INTO Genres (genre_name) VALUES ('Dubstep');
 
 
 INSERT INTO Bands (band_name, formed_year, split_year, country_name, fans) VALUES ('Iron Maiden', 1975, NULL, 'United Kingdom', 4195);
