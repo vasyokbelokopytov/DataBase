@@ -42,3 +42,15 @@ GROUP BY
 ORDER BY 
     fans DESC;
     
+    
+--Alternative third query
+
+SELECT
+    formed_year,
+    SUM(fans)
+FROM
+    bands
+GROUP BY
+    formed_year
+ORDER BY
+    formed_year;
