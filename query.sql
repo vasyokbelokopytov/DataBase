@@ -32,13 +32,13 @@ ORDER BY
 --Third query
 
 SELECT 
-    c.country_name country, 
+    TRIM(c.country_name) country, 
     NVL(SUM(b.fans), 0) fans
 FROM 
     Countries c
     LEFT JOIN Bands b ON c.country_name = b.country_name
 GROUP BY 
-    c.country_name
+    TRIM(c.country_name)
 ORDER BY 
     fans DESC;
     
