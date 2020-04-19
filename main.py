@@ -53,9 +53,21 @@ GROUP BY
 ORDER BY 
     fans DESC"""
 
+
+alternative_third_query = """SELECT
+    formed_year,
+    SUM(fans)
+FROM
+    bands
+GROUP BY
+    formed_year
+ORDER BY
+    formed_year"""
+
 exec(cursor, first_query)
 exec(cursor, second_query)
 exec(cursor, third_query)
+exec(cursor, alternative_third_query)
 
 cursor.close()
 connection.close()
