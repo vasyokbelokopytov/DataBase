@@ -82,23 +82,3 @@ INSERT INTO Bands_Genres (band_name, formed_year, country_name, genre_name) VALU
 INSERT INTO Bands_Genres (band_name, formed_year, country_name, genre_name) VALUES ('Pantera', 1981, 'USA', 'Groove thrash');
 INSERT INTO Bands_Genres (band_name, formed_year, country_name, genre_name) VALUES ('Pantera', 1981, 'USA', 'Groove metal');
 INSERT INTO Bands_Genres (band_name, formed_year, country_name, genre_name) VALUES ('Dark Tranquillity', 1989, 'Sweden', 'Gothenburg');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
