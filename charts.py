@@ -11,7 +11,7 @@ def fileId_from_url(url):
     return raw_fileId.replace('/', ':')
 
 
-chart_studio.tools.set_credentials_file(username='vasyok_belokopytov', api_key='IvwQE08i97Lhae0XQ8SA')
+chart_studio.tools.set_credentials_file(username='vasyok_belokopytov', api_key='bw1SWDiMwcOsiqTUJbq8')
 
 username = 'SYSTEM'
 password = '123'
@@ -38,7 +38,7 @@ country_bands = dict()
 
 for raw in cursor:
     country_bands[raw[0]] = raw[1]
-
+    
 
 data = [go.Bar(
             x=list(country_bands.keys()),
@@ -96,6 +96,7 @@ genres_bands = dict()
 cursor.execute(second_query)
 for raw in cursor:
     genres_bands[raw[0]] = raw[1]
+    
 
 pie = go.Pie(labels=list(genres_bands.keys()), values=list(genres_bands.values()))
 percent_of_genres_url = py.plot([pie], filename='percent_of_genres')
@@ -123,7 +124,7 @@ cursor.execute(third_query)
 
 for raw in cursor:
     country_fans[raw[0]] = raw[1]
-
+    
 
 
 country_fans_dynamic = go.Scatter(
@@ -154,7 +155,7 @@ cursor.execute(alternative_third_query)
 
 for raw in cursor:
     formed_years_fans[raw[0]] = raw[1]
-
+    
 formed_years_fans_dynamic = go.Scatter(
     x=list(formed_years_fans.keys()),
     y=list(formed_years_fans.values()),
