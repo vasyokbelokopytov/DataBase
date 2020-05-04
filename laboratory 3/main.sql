@@ -179,7 +179,7 @@ my_dboard.insert(box_1)
 my_dboard.insert(box_2, 'below', 1)
 my_dboard.insert(box_3, 'below', 2)
 
-py.dashboard_ops.upload(my_dboard, '2 Laboratory Dashboard')
+py.dashboard_ops.upload(my_dboard, '3 Laboratory Dashboard')
 
 
 cursor.close()
