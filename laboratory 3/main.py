@@ -11,7 +11,7 @@ def fileId_from_url(url):
     return raw_fileId.replace('/', ':')
 
 
-chart_studio.tools.set_credentials_file(username='vasyok_belokopytov', api_key='IvwQE08i97Lhae0XQ8SA')
+chart_studio.tools.set_credentials_file(username='vasyok_belokopytov', api_key='bw1SWDiMwcOsiqTUJbq8')
 
 username = 'SYSTEM'
 password = '123'
@@ -45,7 +45,7 @@ data = [go.Bar(
 )]
 
 layout = go.Layout(
-    title='Number of bands in each country',
+    title='Number of bands in each country 2',
     xaxis=dict(
         title='Countries',
         titlefont=dict(
@@ -68,7 +68,7 @@ layout = go.Layout(
 
 fig = go.Figure(data=data, layout=layout)
 
-number_of_bands_in_each_country_url = py.plot(fig, filename='number_of_bands_in_each_country')
+number_of_bands_in_each_country_url = py.plot(fig, filename='number_of_bands_in_each_country_2')
 
 
 
@@ -97,7 +97,7 @@ for raw in cursor:
     country_genres[raw[0]] = raw[1]
 
 pie = go.Pie(labels=list(country_genres.keys()), values=list(country_genres.values()))
-percent_of_genres_url = py.plot([pie], filename='percent_of_genres')
+percent_of_genres_url = py.plot([pie], filename='percent_of_genres_2')
 
 
 
@@ -114,7 +114,7 @@ FROM
                         AND cb.formed_year = f.formed_year
                         AND cb.country_name = f.country_name
 WHERE
-    TRIM(record_date) = '04.05.2020' OR record_date IS NULL
+    TRIM(record_date) = '04-MAY-20' OR record_date IS NULL
 GROUP BY TRIM(cb.country_name)
 ORDER BY fans DESC"""
 
@@ -133,7 +133,7 @@ country_fans_dynamic = go.Scatter(
     mode='lines+markers'
 )
 data = [country_fans_dynamic]
-country_fans_dynamic_url=py.plot(data, filename='country_fans_dynamic')
+country_fans_dynamic_url=py.plot(data, filename='country_fans_dynamic_2')
 
 
 
@@ -156,28 +156,28 @@ box_1 = {
     'type': 'box',
     'boxType': 'plot',
     'fileId': number_of_bands_in_each_country_id,
-    'title': 'Number of bands in each country'
+    'title': 'Number of bands in each country 2'
 }
 
 box_2 = {
     'type': 'box',
     'boxType': 'plot',
     'fileId': percent_of_genres_id,
-    'title': 'Percent of using genres'
+    'title': 'Percent of using genres 2'
 }
 
 box_3 = {
     'type': 'box',
     'boxType': 'plot',
     'fileId': country_fans_dynamic_id,
-    'title': 'Fans by country',
+    'title': 'Fans by country 2',
 }
 
 
 
 my_dboard.insert(box_1)
 my_dboard.insert(box_2, 'below', 1)
-my_dboard.insert(box_3, 'below', 2)
+my_dboard.insert(box_3, 'right', 2)
 
 py.dashboard_ops.upload(my_dboard, '3 Laboratory Dashboard')
 
