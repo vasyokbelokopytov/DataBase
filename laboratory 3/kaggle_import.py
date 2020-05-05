@@ -85,3 +85,4 @@ with open('C:/Users/admin/Desktop/metal.csv') as file:
 
     cursor.close()
     connection.commit()
+    connection.close()
