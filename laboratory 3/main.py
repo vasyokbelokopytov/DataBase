@@ -114,7 +114,7 @@ FROM
                         AND cb.formed_year = f.formed_year
                         AND cb.country_name = f.country_name
 WHERE
-    TRIM(record_date) = '04-MAY-20' OR record_date IS NULL
+    TRIM(record_date) = '05.05.2020' OR record_date IS NULL
 GROUP BY TRIM(cb.country_name)
 ORDER BY fans DESC"""
 
