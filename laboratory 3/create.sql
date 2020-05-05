@@ -6,10 +6,10 @@
 
 
 CREATE TABLE bands (
-    band_name     VARCHAR2(30) NOT NULL,
+    band_name     VARCHAR2(50) NOT NULL,
     formed_year   NUMBER(4) NOT NULL,
     split_year    NUMBER(4),
-    country_name  VARCHAR2(30) NOT NULL
+    country_name  VARCHAR2(50) NOT NULL
 );
 
 ALTER TABLE bands
@@ -18,10 +18,10 @@ ALTER TABLE bands
                                           country_name );
 
 CREATE TABLE bands_genres (
-    genre_name    VARCHAR2(30) NOT NULL,
-    band_name     VARCHAR2(30) NOT NULL,
+    genre_name    VARCHAR2(50) NOT NULL,
+    band_name     VARCHAR2(50) NOT NULL,
     formed_year   NUMBER(4) NOT NULL,
-    country_name  VARCHAR2(30) NOT NULL
+    country_name  VARCHAR2(50) NOT NULL
 );
 
 ALTER TABLE bands_genres
@@ -31,7 +31,7 @@ ALTER TABLE bands_genres
                                                  country_name );
 
 CREATE TABLE countries (
-    country_name VARCHAR2(30) NOT NULL
+    country_name VARCHAR2(50) NOT NULL
 );
 
 ALTER TABLE countries ADD CONSTRAINT countries_pk PRIMARY KEY ( country_name );
@@ -39,9 +39,9 @@ ALTER TABLE countries ADD CONSTRAINT countries_pk PRIMARY KEY ( country_name );
 CREATE TABLE fans (
     record_date   DATE NOT NULL,
     fans          INTEGER,
-    band_name     VARCHAR2(30) NOT NULL,
+    band_name     VARCHAR2(50) NOT NULL,
     formed_year   NUMBER(4) NOT NULL,
-    country_name  VARCHAR2(30) NOT NULL
+    country_name  VARCHAR2(50) NOT NULL
 );
 
 ALTER TABLE fans
@@ -51,7 +51,7 @@ ALTER TABLE fans
                                          country_name );
 
 CREATE TABLE genres (
-    genre_name VARCHAR2(30) NOT NULL
+    genre_name VARCHAR2(50) NOT NULL
 );
 
 ALTER TABLE genres ADD CONSTRAINT genres_pk PRIMARY KEY ( genre_name );
