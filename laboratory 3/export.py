@@ -10,7 +10,7 @@ connection = cx_Oracle.connect(username, password, dsn)
 tables = ['Bands', 'Genres', 'Countries', 'Bands_Genres', 'Fans']
 
 for table in tables:
-    with open(table + '.csv', 'w') as file:
+    with open(table + '.csv', 'w', newline = '') as file:
         writer = csv.writer(file, delimiter=',')
 
         query = "SELECT * FROM " + table
