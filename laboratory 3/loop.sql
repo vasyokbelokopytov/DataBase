@@ -1,13 +1,8 @@
 DECLARE
-    count_of_rows   INTEGER := 0;
     country         bands.country_name%TYPE;
-BEGIN
-    SELECT
-        COUNT(*)
-    INTO count_of_rows
-    FROM bands;
+    
 
-    FOR i IN 1..count_of_rows LOOP
+    FOR i IN 1..20 LOOP
     
         IF ( remainder(i, 3) = 0 ) THEN
             country := 'Poland';
