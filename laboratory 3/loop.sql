@@ -1,16 +1,7 @@
-DECLARE
-    country         bands.country_name%TYPE;
-    
 BEGIN
     FOR i IN 1..20 LOOP
+        INSERT INTO countries (country_name) VALUES ('country' || i);
     
-        IF ( remainder(i, 3) = 0 ) THEN
-            country := 'Poland';
-        ELSE
-            country := 'Finland';
-        END IF;
-
-
         INSERT INTO bands (
             band_name,
             formed_year,
@@ -20,7 +11,7 @@ BEGIN
             'BAND' || i,
             1930 - 3 * i,
             1930 + 4 * i,
-            country
+            'country' || i
         );
 
     END LOOP;
