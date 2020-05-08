@@ -1,7 +1,7 @@
 DECLARE
     country         bands.country_name%TYPE;
     
-
+BEGIN
     FOR i IN 1..20 LOOP
     
         IF ( remainder(i, 3) = 0 ) THEN
