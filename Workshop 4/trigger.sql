@@ -14,5 +14,8 @@ EXCEPTION
             country_name = :new.country_name
         WHERE
             country_name = :new.country_name;
+            
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Unexpected error in country_trig!');
 
 END;
