@@ -1,0 +1,139 @@
+INSERT INTO Country (country_name) VALUES ('United Kingdom');
+INSERT INTO Country (country_name) VALUES ('Sweden');
+INSERT INTO Country (country_name) VALUES ('USA');
+INSERT INTO Country (country_name) VALUES ('Finland');
+INSERT INTO Country (country_name) VALUES ('Germany');
+INSERT INTO Country (country_name) VALUES ('Poland');
+
+INSERT INTO Genre (genre_name) VALUES ('New wave of british heavy');
+INSERT INTO Genre (genre_name) VALUES ('Heavy');
+INSERT INTO Genre (genre_name) VALUES ('Extreme Progressive');
+INSERT INTO Genre (genre_name) VALUES ('Progressive Rock');
+INSERT INTO Genre (genre_name) VALUES ('Progressive');
+INSERT INTO Genre (genre_name) VALUES ('Bay area thrash');
+INSERT INTO Genre (genre_name) VALUES ('Thrash');
+INSERT INTO Genre (genre_name) VALUES ('Hard rock');
+INSERT INTO Genre (genre_name) VALUES ('Melodic death');
+INSERT INTO Genre (genre_name) VALUES ('Progressive death');
+INSERT INTO Genre (genre_name) VALUES ('Death');
+INSERT INTO Genre (genre_name) VALUES ('Progressive trash');
+INSERT INTO Genre (genre_name) VALUES ('Doom');
+INSERT INTO Genre (genre_name) VALUES ('Symphonic power');
+INSERT INTO Genre (genre_name) VALUES ('Gothic');
+INSERT INTO Genre (genre_name) VALUES ('Symphonic');
+INSERT INTO Genre (genre_name) VALUES ('Extreme power');
+INSERT INTO Genre (genre_name) VALUES ('Power');
+INSERT INTO Genre (genre_name) VALUES ('Speed');
+INSERT INTO Genre (genre_name) VALUES ('Gothenburg');
+INSERT INTO Genre (genre_name) VALUES ('Alternative');
+INSERT INTO Genre (genre_name) VALUES ('Groove thrash');
+INSERT INTO Genre (genre_name) VALUES ('Groove metal');
+INSERT INTO Genre (genre_name) VALUES ('Dubstep');
+
+
+INSERT INTO Band (band_name, formed_year, split_year, country_name) VALUES ('Iron Maiden', 1975, NULL, 'United Kingdom');
+INSERT INTO Band (band_name, formed_year, split_year, country_name) VALUES ('Opeth', 1990, 1990, 'Sweden');
+INSERT INTO Band (band_name, formed_year, split_year, country_name) VALUES ('Metallica', 1981, NULL, 'USA');
+INSERT INTO Band (band_name, formed_year, split_year, country_name) VALUES ('Megadeth', 1983, 1983, 'USA');
+INSERT INTO Band (band_name, formed_year, split_year, country_name) VALUES ('Amon Amarth', 1988, NULL, 'Sweden');
+INSERT INTO Band (band_name, formed_year, split_year, country_name) VALUES ('Slayer', 1981, 1981, 'USA');
+INSERT INTO Band (band_name, formed_year, split_year, country_name) VALUES ('Death', 1983, 2001, 'USA');
+INSERT INTO Band (band_name, formed_year, split_year, country_name) VALUES ('Dream Theater', 1985, 1985, 'USA');
+INSERT INTO Band (band_name, formed_year, split_year, country_name) VALUES ('Black Sabbath', 1968, NULL, 'United Kingdom');
+INSERT INTO Band (band_name, formed_year, split_year, country_name) VALUES ('Nightwish', 1996, 1996, 'Finland');
+INSERT INTO Band (band_name, formed_year, split_year, country_name) VALUES ('Children Of Bodom', 1993, NULL, 'Finland');
+INSERT INTO Band (band_name, formed_year, split_year, country_name) VALUES ('Judas Priest', 1969, 1969, 'United Kingdom');
+INSERT INTO Band (band_name, formed_year, split_year, country_name) VALUES ('Blind Guardian', 1984, NULL, 'Germany');
+INSERT INTO Band (band_name, formed_year, split_year, country_name) VALUES ('In Flames', 1990, 1990, 'Sweden');
+INSERT INTO Band (band_name, formed_year, split_year, country_name) VALUES ('Pantera', 1981, 2003, 'USA');
+INSERT INTO Band (band_name, formed_year, split_year, country_name) VALUES ('Dark Tranquillity', 1989, 1989, 'Sweden');
+
+
+
+INSERT INTO Fan (id, fan_name) VALUES(1,'James');
+INSERT INTO Fan (id, fan_name) VALUES(2,'John');
+INSERT INTO Fan (id, fan_name) VALUES(3,'Joseph');
+INSERT INTO Fan (id, fan_name) VALUES(4,'Robert');
+INSERT INTO Fan (id, fan_name) VALUES(5,'Michael');
+INSERT INTO Fan (id, fan_name) VALUES(6,'David');
+INSERT INTO Fan (id, fan_name) VALUES(7,'Richard');
+INSERT INTO Fan (id, fan_name) VALUES(8,'Thomas');
+INSERT INTO Fan (id, fan_name) VALUES(9,'Charles');
+INSERT INTO Fan (id, fan_name) VALUES(10,'Daniel');
+INSERT INTO Fan (id, fan_name) VALUES(11,'Donald');
+INSERT INTO Fan (id, fan_name) VALUES(12,'Gary');
+INSERT INTO Fan (id, fan_name) VALUES(13,'Eric');
+INSERT INTO Fan (id, fan_name) VALUES(14,'Greg');
+
+
+
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Iron Maiden', 1975,  'United Kingdom', 3);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Opeth', 1990,  'Sweden', 2);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Metallica', 1981,  'USA', 5);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Megadeth', 1983,  'USA', 1);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Amon Amarth', 1988,  'Sweden', 13);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Slayer', 1981,  'USA', 11);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Death', 1983,  'USA', 4);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Dream Theater', 1985,  'USA', 6);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Black Sabbath', 1968,  'United Kingdom', 6);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Nightwish', 1996,  'Finland', 7);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Children Of Bodom', 1993,  'Finland', 8);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Judas Priest', 1969,  'United Kingdom', 7);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Blind Guardian', 1984,  'Germany', 9);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('In Flames', 1990,  'Sweden', 10);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Pantera', 1981,  'USA', 9);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Dark Tranquillity', 1989,  'Sweden', 10);
+
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Iron Maiden', 1975,  'United Kingdom', 6);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Opeth', 1990,  'Sweden', 4);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Metallica', 1981,  'USA', 8);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Megadeth', 1983,  'USA', 11);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Amon Amarth', 1988,  'Sweden', 12);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Slayer', 1981,  'USA', 1);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Death', 1983,  'USA', 3);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Dream Theater', 1985,  'USA', 4);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Black Sabbath', 1968,  'United Kingdom', 8);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Nightwish', 1996,  'Finland', 9);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Children Of Bodom', 1993,  'Finland', 2);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Judas Priest', 1969,  'United Kingdom', 2);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Blind Guardian', 1984,  'Germany', 3);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('In Flames', 1990,  'Sweden', 7);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Pantera', 1981,  'USA', 5);
+INSERT INTO Band_Fan (band_name, formed_year,  country_name, id) VALUES ('Dark Tranquillity', 1989,  'Sweden', 3);
+
+
+
+
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Iron Maiden', 1975, 'United Kingdom', 'New wave of british heavy');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Iron Maiden', 1975, 'United Kingdom', 'Heavy');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Opeth', 1990, 'Sweden', 'Extreme Progressive');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Opeth', 1990, 'Sweden', 'Progressive Rock');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Opeth', 1990, 'Sweden', 'Progressive');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Metallica', 1981, 'USA', 'Heavy');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Metallica', 1981, 'USA', 'Bay area thrash');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Megadeth', 1983, 'USA', 'Thrash');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Megadeth', 1983, 'USA', 'Heavy');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Megadeth', 1983, 'USA', 'Hard rock');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Amon Amarth', 1988, 'Sweden', 'Melodic death');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Slayer', 1981, 'USA', 'Thrash');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Death', 1983, 'USA', 'Progressive death');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Death', 1983, 'USA', 'Death');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Death', 1983, 'USA', 'Progressive trash');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Dream Theater', 1985, 'USA', 'Progressive');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Black Sabbath', 1968, 'United Kingdom', 'Doom');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Black Sabbath', 1968, 'United Kingdom', 'Heavy');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Black Sabbath', 1968, 'United Kingdom', 'Hard rock');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Nightwish', 1996, 'Finland', 'Symphonic power');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Nightwish', 1996, 'Finland', 'Gothic');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Nightwish', 1996, 'Finland', 'Symphonic');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Children Of Bodom', 1993, 'Finland', 'Extreme power');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Judas Priest', 1969, 'United Kingdom', 'Heavy');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Judas Priest', 1969, 'United Kingdom', 'Hard rock');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Blind Guardian', 1984, 'Germany', 'Power');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Blind Guardian', 1984, 'Germany', 'Speed');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('In Flames', 1990, 'Sweden', 'Gothenburg');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('In Flames', 1990, 'Sweden', 'Alternative');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Pantera', 1981, 'USA', 'Heavy');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Pantera', 1981, 'USA', 'Groove thrash');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Pantera', 1981, 'USA', 'Groove metal');
+INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Dark Tranquillity', 1989, 'Sweden', 'Gothenburg');
