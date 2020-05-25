@@ -3,8 +3,12 @@ CREATE OR REPLACE TYPE fan_record AS OBJECT (
     fan_name   VARCHAR2(50)
 );
 
+/
+
 CREATE OR REPLACE TYPE fans_table IS
     TABLE OF fan_record;
+
+/
 
 
 CREATE OR REPLACE FUNCTION fan_by_genre_and_band_country (
