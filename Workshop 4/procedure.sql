@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE add_fan_to_band (
+Create Or Replace PROCEDURE add_fan_to_band (
     fan_id             IN   fan.id%TYPE,
     name_of_band       IN   band.band_name%TYPE,
     band_country       IN   band.country_name%TYPE,
@@ -50,6 +50,9 @@ EXCEPTION
 
     WHEN BAND_MISSED_ERROR THEN
         DBMS_OUTPUT.PUT_LINE('No such band in db!');
+        
+    WHEN dup_val_on_index THEN
+        DBMS_OUTPUT.PUT_LINE('Already a fan of this band!');
 
     WHEN OTHERS THEN
         DBMS_OUTPUT.PUT_LINE('Unexpected error!');
