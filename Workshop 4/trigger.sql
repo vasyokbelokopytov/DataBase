@@ -9,11 +9,7 @@ BEGIN
 
 EXCEPTION
     WHEN dup_val_on_index THEN
-        UPDATE country
-        SET
-            country_name = :new.country_name
-        WHERE
-            country_name = :new.country_name;
+        NULL;
             
     WHEN OTHERS THEN
         DBMS_OUTPUT.PUT_LINE('Unexpected error in country_trig!');
