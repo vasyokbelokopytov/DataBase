@@ -22,3 +22,8 @@ SELECT * FROM TABLE(fan_by_genre_and_band_country('Heavy', 'USA'));
 SELECT * FROM TABLE(fan_by_genre_and_band_country('Heavy', 'Finland'));
 
 SELECT * FROM TABLE(fan_by_genre_and_band_country('Progressive', 'Sweden'));
+                                                  
+                                                  
+--Работа триггера                                                  
+INSERT INTO band(band_name, formed_year, country_name) VALUES('Some', 1930, NULL);  
+SELECT * FROM band WHERE band_name = 'Some' AND formed_year = 1930
