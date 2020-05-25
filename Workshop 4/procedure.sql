@@ -8,8 +8,7 @@ CREATE OR REPLACE PROCEDURE add_fan_to_band (
     BAND_MISSED_ERROR EXCEPTION;
     FAN_MISSED_ERROR EXCEPTION;
     counter   NUMBER;
-    message   VARCHAR2(25);
-    
+
 BEGIN
     SELECT COUNT(*) INTO counter FROM fan
     WHERE 
@@ -18,7 +17,7 @@ BEGIN
     IF counter = 0 THEN
         RAISE FAN_MISSED_ERROR;
     END IF;
-    
+
     SELECT COUNT(*) INTO counter FROM band
     WHERE
         band.band_name = name_of_band
@@ -28,28 +27,30 @@ BEGIN
     IF counter = 0 THEN
         RAISE BAND_MISSED_ERROR;
     END IF;
-    
+
     INSERT INTO band_fan (
         id,
         band_name,
-        formed_year,
-        country_name
+        country_name,
+        formed_year
+
     ) VALUES (
         fan_id,
         name_of_band,
         band_country,
         band_formed_year
     );
+    
+    DBMS_OUTPUT.PUT_LINE('Fan successfully added to band!');
+
 
 EXCEPTION
     WHEN FAN_MISSED_ERROR THEN 
-        message := 'No such fan in db!';
-        
+        DBMS_OUTPUT.PUT_LINE('No such fan in db!');
+
     WHEN BAND_MISSED_ERROR THEN
-        message := 'No such band in db!';
-        
+        DBMS_OUTPUT.PUT_LINE('No such band in db!');
+
     WHEN OTHERS THEN
-        message := 'Unexpected error!' ;
-        
-    DBMS_OUTPUT.PUT_LINE(message);
+        DBMS_OUTPUT.PUT_LINE('Unexpected error!');
 END;
