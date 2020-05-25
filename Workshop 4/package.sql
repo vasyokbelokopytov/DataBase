@@ -120,6 +120,9 @@ EXCEPTION
 
     WHEN BAND_MISSED_ERROR THEN
         DBMS_OUTPUT.PUT_LINE('No such band in db!');
+        
+    WHEN dup_val_on_index THEN
+        DBMS_OUTPUT.PUT_LINE('Already a fan of this band!');
 
     WHEN OTHERS THEN
         DBMS_OUTPUT.PUT_LINE('Unexpected error!');
