@@ -50,9 +50,6 @@ INSERT INTO Band (band_name, formed_year, split_year, country_name) VALUES ('Dar
 
 
 
-INSERT INTO Fan (id, fan_name) VALUES(1,'James');
-INSERT INTO Fan (id, fan_name) VALUES(2,'John');
-INSERT INTO Fan (id, fan_name) VALUES(3,'Joseph');
 INSERT INTO Fan (id, fan_name) VALUES(4,'Robert');
 INSERT INTO Fan (id, fan_name) VALUES(5,'Michael');
 INSERT INTO Fan (id, fan_name) VALUES(6,'David');
@@ -126,14 +123,3 @@ INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES
 INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Nightwish', 1996, 'Finland', 'Symphonic power');
 INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Nightwish', 1996, 'Finland', 'Gothic');
 INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Nightwish', 1996, 'Finland', 'Symphonic');
-INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Children Of Bodom', 1993, 'Finland', 'Extreme power');
-INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Judas Priest', 1969, 'United Kingdom', 'Heavy');
-INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Judas Priest', 1969, 'United Kingdom', 'Hard rock');
-INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Blind Guardian', 1984, 'Germany', 'Power');
-INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Blind Guardian', 1984, 'Germany', 'Speed');
-INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('In Flames', 1990, 'Sweden', 'Gothenburg');
-INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('In Flames', 1990, 'Sweden', 'Alternative');
-INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Pantera', 1981, 'USA', 'Heavy');
-INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Pantera', 1981, 'USA', 'Groove thrash');
-INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Pantera', 1981, 'USA', 'Groove metal');
-INSERT INTO Band_Genre (band_name, formed_year, country_name, genre_name) VALUES ('Dark Tranquillity', 1989, 'Sweden', 'Gothenburg');
